@@ -10,5 +10,14 @@ POST - localhost:5000/api/book/v1/books
 }
 
 
-DELETE - localhost:5000/api/book/v1/books/1
+DELETE - localhost:5000/api/book/v1/books/<int:book_id>
 
+
+PUT - localhost:5000/api/book/v1/books/<int:book_id>
+{
+	"title": "The shining - UPDATED",
+	"author": "Stephen King"
+}
+
+
+GET - localhost:5000/api/book/v1/books/<int:book_id>
